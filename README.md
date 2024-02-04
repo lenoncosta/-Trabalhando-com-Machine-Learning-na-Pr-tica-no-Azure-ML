@@ -1,68 +1,19 @@
-Trabalhando com Machine Learning
-Criando modelo de previsão - Passo a passo
-
-Para trabalhar no machine learn é essencial que você possua um workspace e esta é a tarefa inicial, criar o seu workspace para assim poder criar o seu trabalho automatizado.
-
-Depois que nosso worlspace estiver pronto temos que entrar no ML studio para criar um "novo trabalho de ML automatizado", seguindo o passo a passo da documentação do Learning para melhor entendimento e para que tudo dê certo:
 
 
-
-![Screenshot_1](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/23ec41b8-1295-4bfd-aeb9-c15b2e6d4afd)
-![Screenshot_3](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/80c692ee-9e83-4373-bf98-d84d5740e1da)
-
-![Screenshot_2](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/5c10452b-974f-4ffe-989d-423138c0bfad)
-
-
-
-
-...
-Vamos criar um aprendizado de maquina para a previsão de aluguel de bicicletas:
-
-
-
-O tipo de tarefa é regressão e onome de ativo de dados e aluguel de bicicletas, com fonte de dados da WEB.
-
-...
-
-Adocumentação do Learning é bem didática e traz todos os valores e configurações para que o trabalho automatizado seja criado:
-
-...
-
-Chegando na opção "examinar" basta enviar o seu trabalho de treinamento:
-
-...
-
-Após envio seu trabalho irá passar pelo proxesso de configuração das execuções e após 15, podendo o tempo ser menor, estará concluído:
-
-...
-
-Pipeline com as etapas do processo de aprendizado e os testes realizados
-Teste do modelo
-
-Na página do modelo, cliquei na aba "Pontos de extremidade". Também é possível acessar pelo menu lateral em "Pontos de extremidade". Cliquei no ponto correspondente ao modelo gerado. Em seguida, acessei a aba "Testar".
-
-Para o teste, utilizei o json abaixo:
-
-{
-  "input_data": {
-    "data": [
-       {
-         "day": 1,
-         "mnth": 1,   
-         "year": 2022,
-         "season": 2,
-         "holiday": 0,
-         "weekday": 1,
-         "workingday": 1,
-         "weathersit": 2, 
-         "temp": 0.3, 
-         "atemp": 0.3,
-         "hum": 0.3,
-         "windspeed": 0.3 
-       }
-     ]
-  }
-}
-
-A previsão gerada foi: 361.95
-
+![Screenshot_16](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/f32a1ae0-0160-4c63-b211-a7658ccffd6f)
+![Screenshot_15](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/17c1b958-db13-41fa-9281-de4ffab7454d)
+![Screenshot_14](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/b95136a7-278d-4f5b-adef-14a29aabdf78)
+![Screenshot_13](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/1d960660-c673-467a-89dd-90b70378dca6)
+![Screenshot_12](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/0426cd14-4456-4f97-a272-09595a44d949)
+![Screenshot_11](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/a5cc6798-b18f-44e5-a182-96b7fd96c797)
+![Screenshot_10](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/e8ff3d74-6310-441e-a846-74c41597fa3d)
+![Screenshot_9](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/dab95e58-2c94-40ab-868d-4443b27e94f4)
+![Screenshot_8](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/0b578f88-ae47-40d4-b764-2106325c8400)
+![Screenshot_7](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/0d9d6cf6-c732-4da9-a4b9-bd0e00592aac)
+![Screenshot_6](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/13b21382-ed39-4b53-b28b-7f1716fcbacf)
+![Screenshot_5](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/a6481772-43d5-4d12-966f-2b69feb596f3)
+![Screenshot_4](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/e9ca9694-f635-420c-b13f-9ca8c243358f)
+![Screenshot_3](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/47a0778b-61ff-4c09-9124-cbb16085e28c)
+![Screenshot_2](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/b16b4bdd-66f0-4b5a-b3a1-27d286f83a96)
+![Screenshot_1](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/84a65ab9-0649-4ee6-b004-edcd8439d571)
+![Screenshot_17](https://github.com/lenoncosta/-Trabalhando-com-Machine-Learning-na-Pr-tica-no-Azure-ML/assets/44075745/685e3029-89b3-4fb1-b539-3523d5ad000c)
